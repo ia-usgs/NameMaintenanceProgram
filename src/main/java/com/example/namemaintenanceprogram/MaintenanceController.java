@@ -17,11 +17,10 @@ public class MaintenanceController {
     @FXML
     private TextField nameTextField;
     private List<String> originalNames;
-
     @FXML
     private void loadNames() {
         try {
-            originalNames = Files.readAllLines(Paths.get("names.txt"));
+            originalNames = Files.readAllLines(Paths.get("names.txt")); // I am using this list on the root part to read the names
             comboBoxButton.getItems().addAll(originalNames);
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);

@@ -4,6 +4,8 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -12,20 +14,27 @@
    <children>
       <Pane prefHeight="310.0" prefWidth="408.0">
          <children>
-            <Button fx:id="loadButton" layoutX="14.0" layoutY="213.0" mnemonicParsing="false" text="Load" onAction="#loadNames"/>
-            <Button fx:id="addButton" layoutX="88.0" layoutY="213.0" mnemonicParsing="false" text="Add" onAction="#addName"/>
-            <Button fx:id="resetButton" layoutX="84.0" layoutY="271.0" mnemonicParsing="false" text="Reset" onAction="#resetNames"/>
-            <Button fx:id="removeButton" layoutX="255.0" layoutY="209.0" mnemonicParsing="false" text="Remove" onAction="#removeName"/>
-            <Button fx:id="selectButton" layoutX="346.0" layoutY="209.0" mnemonicParsing="false" text="Select" onAction="#selectName"/>
-            <Button fx:id="exitButton" layoutX="267.0" layoutY="267.0" mnemonicParsing="false" text="Exit" onAction="#exitProgram"/>
-            <Label id="nameLabel" layoutX="24.0" layoutY="66.0" text="Name" />
-            <Label id="mainLabel" layoutX="91.0" layoutY="14.0" text="Name Maintenance Program">
+            <ImageView fitHeight="358.0" fitWidth="547.0" layoutX="-6.0" layoutY="-32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../wp1909775-mewto-wallpapers.jpg" />
+               </image></ImageView>
+            <Button fx:id="loadButton" layoutX="14.0" layoutY="213.0" mnemonicParsing="false" onAction="#loadNames" text="Load" />
+            <Button fx:id="addButton" layoutX="88.0" layoutY="213.0" mnemonicParsing="false" onAction="#addName" text="Add" />
+            <Button fx:id="resetButton" layoutX="84.0" layoutY="271.0" mnemonicParsing="false" onAction="#resetNames" text="Reset" />
+            <Button fx:id="removeButton" layoutX="255.0" layoutY="209.0" mnemonicParsing="false" onAction="#removeName" text="Remove" />
+            <Button fx:id="selectButton" layoutX="346.0" layoutY="209.0" mnemonicParsing="false" onAction="#selectName" text="Select" />
+            <Button fx:id="exitButton" layoutX="267.0" layoutY="267.0" mnemonicParsing="false" onAction="#exitProgram" text="Exit" />
+            <Label id="nameLabel" layoutX="24.0" layoutY="66.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label id="mainLabel" layoutX="91.0" layoutY="14.0" text="Name Maintenance Program" textFill="WHITE">
                <font>
                   <Font name="System Italic" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="nameTextField" layoutX="65.0" layoutY="62.0" />
-            <ComboBox fx:id="comboBoxButton" layoutX="239.0" layoutY="62.0" prefWidth="150.0" />
+            <TextField fx:id="nameTextField" layoutX="65.0" layoutY="62.0" promptText="Enter a name here" />
+            <ComboBox fx:id="comboBoxButton" layoutX="239.0" layoutY="62.0" prefWidth="150.0" promptText="Names are here" />
          </children>
       </Pane>
    </children>

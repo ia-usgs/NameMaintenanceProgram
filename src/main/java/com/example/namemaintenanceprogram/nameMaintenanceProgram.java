@@ -11,7 +11,7 @@ public class nameMaintenanceProgram extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(nameMaintenanceProgram.class.getResource("mainScene.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 450, 315);
+        Scene scene = new Scene(fxmlLoader.load(), 450, 300);
         stage.setTitle("Name Maintenance Program");
         stage.setScene(scene);
         stage.show();
